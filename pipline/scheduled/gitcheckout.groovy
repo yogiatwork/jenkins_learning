@@ -18,6 +18,6 @@ node('master') {
             bat 'dir'
         }
     }
-    fetch_code
-    checkvars 
+    fetch_code()
+    checkvars() 
 }
