@@ -1,7 +1,7 @@
 def fetch_code() {
     stage('git checkout'){
         deleteDir()
-        git checkout
+        checkout scm
     }
 }
 
