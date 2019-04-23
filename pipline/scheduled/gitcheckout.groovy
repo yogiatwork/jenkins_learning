@@ -19,5 +19,11 @@ node('master') {
         }
     }
     fetch_code()
-    checkvars() 
+    checkvars()
+@Library('util')
+    stage('updated message'){
+         log.info 'Starting'
+         log.warning 'Nothing to do!'
+       
+    }
 }
