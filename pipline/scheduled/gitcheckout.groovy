@@ -20,7 +20,7 @@ node('master') {
     }
     fetch_code()
     checkvars()
-    @Library('util')_
+    @Library('util-lib')_
     stage('updated message'){
          log.info 'Starting'
          log.warning 'Nothing to do!'
