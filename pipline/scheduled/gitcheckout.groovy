@@ -26,4 +26,9 @@ node('master') {
          log.warning 'Nothing to do!'
        
     }
+
+    stage ('variable as library'){
+        libvar "Sapna"
+        libvar()
+    }
 }
