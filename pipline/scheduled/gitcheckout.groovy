@@ -20,9 +20,12 @@ node('master') {
     }
     fetch_code()
     checkvars()
-    @Library('checkutil') _
+    @Library('checkutil') import org.eng.ext.testcall
     
-    stage('updated message'){
+    p1 = new testcall()
+    p1.sayhello('baba')
+    
+        stage('updated message'){
          log.info 'Starting'
          log.warning 'Nothing to do!'
        
