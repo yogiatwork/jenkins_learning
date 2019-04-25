@@ -1,3 +1,7 @@
+    import org.eng.ext.testcall
+    p1 = new testcall()
+    p1.sayhello('baba')
+
 def fetch_code() {
     stage('git checkout'){
         deleteDir()
@@ -21,8 +25,7 @@ node('master') {
     fetch_code()
     checkvars()
 
-    p1 = new testcall()
-    p1.sayhello('baba')
+
 
         stage('updated message'){
          log.info 'Starting'
