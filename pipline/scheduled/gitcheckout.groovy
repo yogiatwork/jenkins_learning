@@ -20,7 +20,7 @@ node('master') {
     }
     fetch_code()
     checkvars()
-    @Library('checkutil@') import org.eng.ext.testcall
+    @Library('checkutil@') _
     
     p1 = new testcall()
     p1.sayhello('baba')
