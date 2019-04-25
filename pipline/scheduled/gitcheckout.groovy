@@ -21,6 +21,7 @@ node('master') {
     fetch_code()
     checkvars()
     @Library('checkutil') _
+    import org.eng.ext.*
     stage('updated message'){
          log.info 'Starting'
          log.warning 'Nothing to do!'
