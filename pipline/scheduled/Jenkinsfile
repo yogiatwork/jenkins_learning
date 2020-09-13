@@ -1,9 +1,9 @@
 node {
-    stage('message'){
-        dir('C:/Work'){
-            bat 'dir'
-        }
-       isUnix()    
-       echo 'Hello World'
-    } 
+    stage('clean and download scm'){
+        deleteDir()
+        checkout scm
+    }
+    stage('print cmd'){
+        utils.printCMD()
+    }
 }
