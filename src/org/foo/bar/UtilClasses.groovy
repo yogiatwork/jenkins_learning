@@ -1,8 +1,7 @@
 package org.foo.bar
 
 class UtilClasses implements Serialization {
-    def script
-
+    private script
     UtilClasses(script){
         this.script = script
     }
