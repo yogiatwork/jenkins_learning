@@ -1,0 +1,9 @@
+node {
+    stage('clean and download scm'){
+        deleteDir()
+        checkout scm
+    }
+    stage('print cmd'){
+        utils.printCMD()
+    }
+}
