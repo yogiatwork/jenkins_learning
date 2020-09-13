@@ -1,3 +1,5 @@
+@Library('yogilib') _
+
 node {
     stage('clean and download scm'){
         deleteDir()
