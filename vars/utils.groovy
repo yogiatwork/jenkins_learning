@@ -1,15 +1,13 @@
 package org.foo.bar
 
-private script
- 
 // init function
-def initClass(script){
-    return new org.foo.bar.UtilClasses(script)
+def initClass(){
+    return new org.foo.bar.UtilClasses(this)
     }
 
 def printCMD(){
 
-    def util = initClass(this)
+    def util = initClass()
 
     if (isUnix() == true) {
         util.echoCmdLin()
