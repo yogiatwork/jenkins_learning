@@ -1,9 +1,11 @@
 package org.foo.bar
 
+private script
+ 
 // init function
-def initClass(){
-    return new org.foo.bar.UtilClasses 
-}
+def initClass(script){
+    return new org.foo.bar.UtilClasses(script)
+    }
 
 def printCMD(){
 
