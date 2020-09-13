@@ -9,7 +9,7 @@ def printCMD(){
 
     def util = initClass()
 
-    if (isUnix() == true) {
+    if (isUnix() == true){
         util.echoCmdLin()
     }else {
         util.echoCmdWin()
