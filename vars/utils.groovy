@@ -12,6 +12,6 @@ def printCMD(){
     if (isUnix() == true) {
         util.echoCmdLin()
     }else {
-        util.choCmdWin()
+        util.echoCmdWin()
     }
 }
