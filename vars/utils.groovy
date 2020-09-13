@@ -1,9 +1,17 @@
 package org.foo.bar
 
-def printCMD() {
+// init function
+def initClass(){
+    return new org.foo.bar.UtilClasses 
+}
+
+def printCMD(){
+
+    def util = initClass(this)
+
     if (isUnix() == true) {
-        sh "echo 'Hello World'"
+        util.echoCmdLin()
     }else {
-        bat "echo 'Hello World'"
+        util.choCmdWin()
     }
 }
