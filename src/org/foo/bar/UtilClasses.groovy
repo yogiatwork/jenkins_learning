@@ -1,6 +1,6 @@
 package org.foo.bar
 
-class UtilClasses implements Serialization {
+class UtilClasses implements Serializable {
     private script
     UtilClasses(script){
         this.script = script
